@@ -1,0 +1,33 @@
+#include<bits/stdc++.h>
+using namespace std;
+struct timestamp{
+    int date;
+    int month;
+    int year;
+};
+struct node{
+    struct timestamp *dt;
+    int nodeNumber;
+    string data;
+    string nodeId;
+    string referenceNodeId;
+    map<node*,int>child;
+    string genesisReferenceNodeId;
+    node()
+    {
+        nodeNumber = 0;
+        nodeId = NULL;
+        referenceNodeId = NULL;
+        genesisReferenceNodeId = NULL;
+    }
+};
+
+
+int main()
+{
+    node *genesis_root = new node(); // createing the genesis node
+    
+    
+    return 0;
+  
+  }
